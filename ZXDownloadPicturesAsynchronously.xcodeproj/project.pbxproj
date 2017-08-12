@@ -13,6 +13,10 @@
 		C9C65AF91F3D803D002987B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C65AF71F3D803D002987B3 /* Main.storyboard */; };
 		C9C65AFB1F3D803D002987B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C65AFA1F3D803D002987B3 /* Assets.xcassets */; };
 		C9C65AFE1F3D803D002987B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C65AFC1F3D803D002987B3 /* LaunchScreen.storyboard */; };
+		C9C65B061F3D80B3002987B3 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9C65B051F3D80B3002987B3 /* apps.plist */; };
+		C9C65B0E1F3D814E002987B3 /* ZXAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C65B0D1F3D814E002987B3 /* ZXAppInfo.m */; };
+		C9C65B111F3D8E86002987B3 /* AppTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C65B101F3D8E86002987B3 /* AppTableViewCell.m */; };
+		C9C65B3D1F3DFC7D002987B3 /* NSString+Sandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C65B3C1F3DFC7D002987B3 /* NSString+Sandbox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		C9C65AFA1F3D803D002987B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9C65AFD1F3D803D002987B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9C65AFF1F3D803D002987B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C65B051F3D80B3002987B3 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
+		C9C65B0C1F3D814E002987B3 /* ZXAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXAppInfo.h; sourceTree = "<group>"; };
+		C9C65B0D1F3D814E002987B3 /* ZXAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXAppInfo.m; sourceTree = "<group>"; };
+		C9C65B0F1F3D8E86002987B3 /* AppTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTableViewCell.h; sourceTree = "<group>"; };
+		C9C65B101F3D8E86002987B3 /* AppTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTableViewCell.m; sourceTree = "<group>"; };
+		C9C65B3B1F3DFC7D002987B3 /* NSString+Sandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sandbox.h"; sourceTree = "<group>"; };
+		C9C65B3C1F3DFC7D002987B3 /* NSString+Sandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sandbox.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +69,10 @@
 		C9C65AED1F3D803D002987B3 /* ZXDownloadPicturesAsynchronously */ = {
 			isa = PBXGroup;
 			children = (
-				C9C65AF11F3D803D002987B3 /* AppDelegate.h */,
-				C9C65AF21F3D803D002987B3 /* AppDelegate.m */,
-				C9C65AF41F3D803D002987B3 /* ViewController.h */,
-				C9C65AF51F3D803D002987B3 /* ViewController.m */,
-				C9C65AF71F3D803D002987B3 /* Main.storyboard */,
-				C9C65AFA1F3D803D002987B3 /* Assets.xcassets */,
-				C9C65AFC1F3D803D002987B3 /* LaunchScreen.storyboard */,
-				C9C65AFF1F3D803D002987B3 /* Info.plist */,
+				C9C65B0B1F3D8100002987B3 /* Others */,
+				C9C65B0A1F3D80F8002987B3 /* Models */,
+				C9C65B091F3D80ED002987B3 /* Controllers */,
+				C9C65B071F3D80DE002987B3 /* Views */,
 				C9C65AEE1F3D803D002987B3 /* Supporting Files */,
 			);
 			path = ZXDownloadPicturesAsynchronously;
@@ -74,9 +81,52 @@
 		C9C65AEE1F3D803D002987B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C9C65B051F3D80B3002987B3 /* apps.plist */,
+				C9C65AFA1F3D803D002987B3 /* Assets.xcassets */,
+				C9C65AFF1F3D803D002987B3 /* Info.plist */,
 				C9C65AEF1F3D803D002987B3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9C65B071F3D80DE002987B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9C65AF71F3D803D002987B3 /* Main.storyboard */,
+				C9C65AFC1F3D803D002987B3 /* LaunchScreen.storyboard */,
+				C9C65B0F1F3D8E86002987B3 /* AppTableViewCell.h */,
+				C9C65B101F3D8E86002987B3 /* AppTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C9C65B091F3D80ED002987B3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9C65AF41F3D803D002987B3 /* ViewController.h */,
+				C9C65AF51F3D803D002987B3 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C9C65B0A1F3D80F8002987B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9C65B0C1F3D814E002987B3 /* ZXAppInfo.h */,
+				C9C65B0D1F3D814E002987B3 /* ZXAppInfo.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C9C65B0B1F3D8100002987B3 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				C9C65B3B1F3DFC7D002987B3 /* NSString+Sandbox.h */,
+				C9C65B3C1F3DFC7D002987B3 /* NSString+Sandbox.m */,
+				C9C65AF11F3D803D002987B3 /* AppDelegate.h */,
+				C9C65AF21F3D803D002987B3 /* AppDelegate.m */,
+			);
+			name = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C65B061F3D80B3002987B3 /* apps.plist in Resources */,
 				C9C65AFE1F3D803D002987B3 /* LaunchScreen.storyboard in Resources */,
 				C9C65AFB1F3D803D002987B3 /* Assets.xcassets in Resources */,
 				C9C65AF91F3D803D002987B3 /* Main.storyboard in Resources */,
@@ -151,8 +202,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9C65AF61F3D803D002987B3 /* ViewController.m in Sources */,
+				C9C65B3D1F3DFC7D002987B3 /* NSString+Sandbox.m in Sources */,
+				C9C65B0E1F3D814E002987B3 /* ZXAppInfo.m in Sources */,
 				C9C65AF31F3D803D002987B3 /* AppDelegate.m in Sources */,
 				C9C65AF01F3D803D002987B3 /* main.m in Sources */,
+				C9C65B111F3D8E86002987B3 /* AppTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +365,7 @@
 				C9C65B041F3D803D002987B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
